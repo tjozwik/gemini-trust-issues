@@ -1,0 +1,16 @@
+{
+  "codex-ai-command-review": {
+    "PreToolUse": [
+      {
+        "matcher": "run_command",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.gemini/config/hooks/ai-command-review.sh",
+            "timeout": 100
+          }
+        ]
+      }
+    ]
+  }
+}

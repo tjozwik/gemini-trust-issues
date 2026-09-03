@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "command(*)"
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "~/.gemini/antigravity-cli/ai-command-review-statusline.sh",
+    "enabled": true,
+    "stack_with_default": true
+  }
+}
