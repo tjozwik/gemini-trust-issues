@@ -4,7 +4,7 @@ A global hook for Antigravity CLI (`agy`) that asks an independent reviewer in C
 
 Default reviewer configuration:
 
-- model: `AGY_COMMAND_REVIEW_MODEL`, defaulting to `gpt-5.6-luna`;
+- model: `AGY_COMMAND_REVIEW_MODEL`, defaulting to `gpt-6-luna`;
 - reasoning effort: `AGY_COMMAND_REVIEW_REASONING_EFFORT`, defaulting to `max`;
 - reviewer sandbox: `read-only`;
 - reviewer network and tool access: disabled;
@@ -154,7 +154,7 @@ It does not execute the reviewed command.
 The main parameters are at the beginning of `global-hook/ai-command-review.sh`:
 
 ```bash
-readonly MODEL="${AGY_COMMAND_REVIEW_MODEL:-gpt-5.6-luna}"
+readonly MODEL="${AGY_COMMAND_REVIEW_MODEL:-gpt-6-luna}"
 readonly REASONING_EFFORT="${AGY_COMMAND_REVIEW_REASONING_EFFORT:-max}"
 readonly REVIEW_TIMEOUT_SECONDS=90
 ```
@@ -162,7 +162,7 @@ readonly REVIEW_TIMEOUT_SECONDS=90
 Override the defaults when starting `agy`:
 
 ```bash
-AGY_COMMAND_REVIEW_MODEL=gpt-5.6-luna \
+AGY_COMMAND_REVIEW_MODEL=gpt-6-luna \
 AGY_COMMAND_REVIEW_REASONING_EFFORT=max \
 agy
 ```

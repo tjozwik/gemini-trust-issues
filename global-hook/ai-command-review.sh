@@ -4,7 +4,7 @@ set -u
 set -o pipefail
 
 readonly CODEX_BIN="${AGY_COMMAND_REVIEW_CODEX_BIN:-$(command -v codex 2>/dev/null || true)}"
-readonly MODEL="${AGY_COMMAND_REVIEW_MODEL:-gpt-5.6-luna}"
+readonly MODEL="${AGY_COMMAND_REVIEW_MODEL:-gpt-6-luna}"
 readonly REASONING_EFFORT="${AGY_COMMAND_REVIEW_REASONING_EFFORT:-max}"
 readonly REVIEW_TIMEOUT_SECONDS=90
 readonly SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd -P)"

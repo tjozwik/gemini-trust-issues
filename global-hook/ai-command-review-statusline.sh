@@ -4,7 +4,7 @@ set -u
 set -o pipefail
 
 readonly REVIEW_STATE_DIR="${AGY_COMMAND_REVIEW_STATE_DIR:-${HOME}/.gemini/antigravity-cli/ai-command-review-state}"
-readonly DEFAULT_MODEL="${AGY_COMMAND_REVIEW_MODEL:-gpt-5.6-luna}"
+readonly DEFAULT_MODEL="${AGY_COMMAND_REVIEW_MODEL:-gpt-6-luna}"
 readonly DEFAULT_REASONING_EFFORT="${AGY_COMMAND_REVIEW_REASONING_EFFORT:-max}"
 
 status_input="$(cat)" || exit 0
